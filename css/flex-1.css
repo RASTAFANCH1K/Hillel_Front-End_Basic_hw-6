@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+.section {
+  width: 1000px;
+  margin: auto;
+  border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.flex-container {
+  height: 200px;
+  display: flex;
+}
+
+.flex-item {
+  width: 100px;
+  color: white;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.flex-item:nth-child(1) {
+  background-color: red;
+  height: 50px;
+}
+
+.flex-item:nth-child(2) {
+  background-color: green;
+  height: 100px;
+}
+
+.flex-item:nth-child(3) {
+  background-color: tomato;
+  height: 150px;
+}
+
+.flex-item:nth-child(4) {
+  background-color: orange;
+  height: 200px;
+}
+
+.box-1 {
+  justify-content: center;
+}
+
+.box-1 .flex-item:nth-child(1) {
+  order: 1;
+}
+
+.box-1 .flex-item:nth-child(2) {
+  order: 3;
+}
+
+.box-1 .flex-item:nth-child(3) {
+  order: 4;
+}
+
+.box-1 .flex-item:nth-child(4) {
+  order: 2;
+}
+
+.box-2 {
+  align-items: flex-end;
+}
+
+.box-2 .flex-item:nth-child(1) {
+  order: 4;
+}
+
+.box-2 .flex-item:nth-child(2) {
+  order: 2;
+}
+
+.box-2 .flex-item:nth-child(3) {
+  order: 1;
+}
+
+.box-2 .flex-item:nth-child(4) {
+  order: 3;
+}
+
+.box-3 {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box-3 .flex-item:nth-child(1) {
+  order: 1;
+}
+
+.box-3 .flex-item:nth-child(2) {
+  order: 3;
+}
+
+.box-3 .flex-item:nth-child(3) {
+  order: 4;
+}
+
+.box-3 .flex-item:nth-child(4) {
+  order: 2;
+}
+
+.box-4 {
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.box-4 .flex-item {
+  height: auto;
+}
+
+.box-4 .flex-item:nth-child(1) {
+  order: 1;
+}
+
+.box-4 .flex-item:nth-child(2) {
+  order: 3;
+}
+
+.box-4 .flex-item:nth-child(3) {
+  order: 4;
+}
+
+.box-4 .flex-item:nth-child(4) {
+  order: 2;
+}
+
+.box-5 {
+  justify-content: center;
+  align-items: stretch;
+}
+
+.box-5 .flex-item {
+  height: auto;
+}
+
+.box-5 .flex-item:nth-child(1) {
+  order: 1;
+}
+
+.box-5 .flex-item:nth-child(2) {
+  order: 3;
+  align-self: center;
+  height: 100px;
+}
+
+.box-5 .flex-item:nth-child(3) {
+  order: 4;
+}
+
+.box-5 .flex-item:nth-child(4) {
+  order: 2;
+}
